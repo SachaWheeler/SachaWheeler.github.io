@@ -94,11 +94,16 @@
     <section>
       <img src="images/sacha_wheeler.jpeg" alt="Sacha Wheeler" class="profile-img">
       <h2>About Me</h2>
-      <p>I'm a passionate Software Developer &amp; CTO with 28 years' experience in start-ups who loves
-      building things and learning new technologies.</p>
+      <p>I'm a passionate Software Developer &amp; CTO with <span id="years-since-1997"></span> years' experience
+      in start-ups who loves building things and learning new technologies.</p>
       <p>I write code, manage technical teams
       and can speak technology to engineers, investors, &amp; regular folk.</p>
     </section>
+    <script>
+      const startYear = 1997;
+      const currentYear = new Date().getFullYear();
+      document.getElementById('years-since-1997').textContent = currentYear - startYear;
+    </script>
     <section>
       <h2>Skills</h2>
       <div class="skills">
