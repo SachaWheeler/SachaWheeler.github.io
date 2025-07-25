@@ -13,3 +13,6 @@ This is the code for my personal website, hosted via GitHub Pages at [sachawheel
 - HTML
 - CSS
 - JavaScript
+
+## License
+This project is for personal use and is not under any specific license currently.
