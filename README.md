@@ -1,4 +1,4 @@
-# Sacha Wheeler's Personal Website
+# My Personal Website
 
 This is the codebase for my personal website, hosted via GitHub Pages at [sachawheeler.github.io](https://sachawheeler.github.io). The site showcases my work, skills, and interests.
 
