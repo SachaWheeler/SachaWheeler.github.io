@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is the codebase for my personal website, hosted via GitHub Pages at [sachawheeler.github.io](https://sachawheeler.github.io). The site showcases my work, skills, and interests.
+This is the codebase for my personal website, hosted via GitHub Pages at [sachawheeler.com](https://sachawheeler.com). The site showcases my work, skills, and interests.
 
 ## Features
 
