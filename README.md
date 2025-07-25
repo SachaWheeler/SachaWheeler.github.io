@@ -4,8 +4,7 @@ This is the codebase for my personal website, hosted via GitHub Pages at [sachaw
 
 ## Features
 
-- Personal introduction
-- Portfolio of projects
+- Introduction
 - Skills and expertise
 - Contact information
 
