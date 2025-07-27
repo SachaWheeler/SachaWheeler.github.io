@@ -1,170 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Sacha Wheeler - Software Developer &amp; CTO</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0; padding: 0; background: #f9f9f9; color: #222;
-    }
-    header {
-      background: #374785; color: #fff; padding: 2rem 0; text-align: center;
-    }
-    main {
-      max-width: 700px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-    }
-    h1 { margin-top: 0; }
-    section { margin-bottom: 2rem; }
-    ul { padding-left: 1.2em; }
-    .skills, .interests { display: flex; flex-wrap: wrap; gap: 1em; }
-    .tag {
-      background: #e3e3e3;
-      border-radius: 16px;
-      padding: 0.4em 1em;
-      font-size: 1em;
-    }
-    .profile-img {
-      float: right;
-      margin: 0 0 1em 2em;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-    }
-    .contact-icons {
-      display: flex;
-      gap: 1.5em;
-      align-items: center;
-      padding-left: 0;
-      list-style: none;
-    }
-    .contact-icons li {
-      display: flex;
-      align-items: center;
-    }
-    .contact-icons a {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-      color: #374785;
-      font-size: 1.15em;
-      transition: color 0.2s;
-    }
-    .contact-icons a:hover {
-      color: #24305e;
-    }
-    .contact-icon-svg {
-      width: 28px;
-      height: 28px;
-      fill: #374785;
-      margin-right: 0.35em;
-      vertical-align: middle;
-      transition: fill 0.2s;
-    }
-    .contact-icons a:hover .contact-icon-svg {
-      fill: #24305e;
-    }
-    .github-contrib-svg {
-      display: block;
-      margin: 2rem auto;
-      max-width: 100%;
-      height: auto;
-    }
-
-    footer {
-      text-align: center;
-      color: #888;
-      font-size: 0.9em;
-      padding: 1.5em 0;
-    }
-    @media (max-width: 600px) {
-      main { padding: 1em; }
-      .profile-img {
-        float: none;
-        display: block;
-        margin: 0 auto 1em auto;
-      }
-      .contact-icons { justify-content: center; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacha Wheeler - Software Developer &amp; CTO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Sacha Wheeler</h1>
-    <p>Software Developer &amp; CTO</p>
-  </header>
-  <main>
-    <section>
-      <img src="images/sacha_wheeler.jpeg" alt="Sacha Wheeler" class="profile-img">
-      <h2>About Me</h2>
-      <p>I'm a Software Developer &amp; CTO with <span id="years-since-1997"></span> years' experience
-      in online start-ups who loves building & fixing things and learning new technologies.</p>
-      <p>I design &amp; write code on my own or in a team, prototype &amp; test, manage technical teams
-      and can speak tech to engineers, investors, &amp; regular folk.</p>
-      <p>I use LLMs as I would a chainsaw - carefully, and only when it's an appropriate tool for the job.</p>
-    </section>
-    <script>
-      const startYear = 1997;
-      const currentYear = new Date().getFullYear();
-      document.getElementById('years-since-1997').textContent = currentYear - startYear;
-    </script>
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span class="tag">Python</span>
-        <span class="tag">Linux</span>
-        <span class="tag">Prototyping</span>
-        <span class="tag">Automation</span>
-        <span class="tag">Testing</span>
-        <span class="tag">Security</span>
-        <span class="tag">Machine Learning</span>
-        <span class="tag">Electronics</span>
-        <span class="tag">...</span>
-      </div>
-    </section>
-    <section>
-      <h2>Interests &amp; Hobbies</h2>
-      <div class="interests">
-        <span class="tag">Music</span>
-        <span class="tag">Books</span>
-        <span class="tag">Mathematics</span>
-        <span class="tag">Science</span>
-        <span class="tag">Photography</span>
-      </div>
-    </section>
-    <a href="https://github.com/SachaWheeler" title="GitHub" target="_blank" rel="noopener">
-      <img src="https://ghchart.rshah.org/SachaWheeler" alt="GitHub contribution graph" class="github-contrib-svg">
-    </a>
-    <section>
-      <h2>Contact</h2>
-      <ul class="contact-icons">
-        <li>
-          <a href="mailto:sacha@sachawheeler.com" title="Email">
-            <svg class="contact-icon-svg" viewBox="0 0 24 24"><path d="M12 13.065L2.4 6.6V6.6C2.72 6.228 3.172 6 3.667 6h16.666c.495 0 .947.228 1.267.6L12 13.065zm9.6-5.582A2.4 2.4 0 0 1 21.6 8.4v7.2A2.4 2.4 0 0 1 19.2 18H4.8A2.4 2.4 0 0 1 2.4 15.6V8.4c0-.343.077-.667.2-.952l9.4 6.457 9.4-6.457z"/></svg>
-            Email
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/SachaWheeler" title="GitHub" target="_blank" rel="noopener">
-            <svg class="contact-icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.425 2.865 8.178 6.839 9.504.5.09.682-.217.682-.482 0-.238-.009-.868-.013-1.703-2.782.604-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.031 1.532 1.031.892 1.53 2.341 1.088 2.91.832.09-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.848-2.338 4.696-4.566 4.946.36.31.68.92.68 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.576.688.479C19.138 20.195 22 16.442 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/SachaWheeler/" title="LinkedIn" target="_blank" rel="noopener">
-            <svg class="contact-icon-svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.568c0-1.327-.025-3.037-1.849-3.037-1.849 0-2.132 1.445-2.132 2.939v5.666h-3.554V9h3.414v1.561h.049c.476-.899 1.637-1.847 3.37-1.847 3.601 0 4.265 2.368 4.265 5.455v6.283zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zm1.777 13.019H3.56V9h3.554v11.452z"/></svg>
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Sacha Wheeler
-  </footer>
+    <main class="container">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="images/sacha_wheeler.jpeg" alt="Sacha Wheeler">
+            </div>
+            <h1>Sacha Wheeler</h1>
+            <p class="job-title">Software developer &amp; CTO</p>
+        </div>
+
+        <section class="content-section">
+            <div class="section-label">/about</div>
+            <div class="section-content">
+                    <p>I'm a Software Developer &amp; CTO with 28 years' experience in online start-ups who loves building &amp; fixing things and learning new technologies.</p>
+                    <p>I design &amp; write code on my own or in a team, prototype &amp; test, manage technical teams and can speak tech to engineers, investors, &amp; regular folk.</p>
+                    <p>I use LLMs as I would a chainsaw - carefully, and only when it's an appropriate tool for the job.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-label">/work</div>
+            <div class="section-content">
+                    <p>I currently work as CTO at <a href="https://bibo.io" target="_blank" rel="noopener noreferrer">BiBO.io</a>, where we use machine-learning to advise on and manage our clients' wine investments.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-label">/skills</div>
+            <div class="section-content">
+               <div class="skills">
+                 <span class="tag">Python</span>
+                 <span class="tag">Linux</span>
+                 <span class="tag">Prototyping</span>
+                 <span class="tag">Automation</span>
+                 <span class="tag">Testing</span>
+                 <span class="tag">Security</span>
+                 <span class="tag">Machine Learning</span>
+                 <span class="tag">Electronics</span>
+                 <span class="tag">...</span>
+               </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-label">/Interests</div>
+            <div class="section-content">
+               <div class="interests">
+                 <span class="tag">Music</span>
+                 <span class="tag">Books</span>
+                 <span class="tag">Mathematics</span>
+                 <span class="tag">Science</span>
+                 <span class="tag">Photography</span>
+               </div>
+                <p class="signature">— Sacha</p>
+            </div>
+        </section>
+
+        <div class="social-links">
+                <a href="https://github.com/SachaWheeler" class="social-button" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.425 2.865 8.178 6.839 9.504.5.09.682-.217.682-.482 0-.238-.009-.868-.013-1.703-2.782.604-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.031 1.532 1.031.892 1.53 2.341 1.088 2.91.832.09-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.848-2.338 4.696-4.566 4.946.36.31.68.92.68 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.576.688.479C19.138 20.195 22 16.442 22 12.021 22 6.484 17.523 2 12 2z" fill="#555555"></path></svg>
+                github
+            </a>
+            <a href="mailto:sacha@sachawheeler.com" class="social-button" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                email
+            </a>
+            <a href="https://www.linkedin.com/in/sachawheeler/" class="social-button" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                linkedin
+            </a>
+        </div>
+
+        <footer class="footer">
+            <div class="section-label"></div>
+            <div class="footer-content">
+                <p>© 2025 Sacha Wheeler</p>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
