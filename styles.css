@@ -202,3 +202,13 @@ a:hover {
     border-color: #ccc;
     cursor: default;
 }
+
+.github-contrib {
+    width: 100%;
+}
+
+.github-contrib img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
