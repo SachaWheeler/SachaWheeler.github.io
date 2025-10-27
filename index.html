@@ -26,11 +26,6 @@
                     teams and can speak tech to engineers, investors, &amp; also to regular folk.</p>
                     <p>I use LLMs as I would a chainsaw - very carefully, paying close attention, and only when
                     it's an appropriate tool for the job.</p>
-    <script>
-      const startYear = 1997;
-      const currentYear = new Date().getFullYear();
-      document.getElementById('years-since-1997').textContent = currentYear - startYear;
-    </script>
             </div>
         </section>
 
@@ -103,9 +98,15 @@
         <footer class="footer">
             <div class="section-label"></div>
             <div class="footer-content">
-                <p>© 2025 Sacha Wheeler</p>
+                <p>© <span id="current-year"></span> Sacha Wheeler</p>
                 </div>
             </div>
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById('current-year').textContent = currentYear;
+      const startYear = 1997;
+      document.getElementById('years-since-1997').textContent = currentYear - startYear;
+    </script>
         </footer>
     </main>
 </body>
